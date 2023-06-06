@@ -1,3 +1,56 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-family: "ivyora-text",sans-serif;
+}
+
+h2, h3 {
+  font-family: 'Cormorant';
+}
+
+.subhead::first-letter {
+  padding: .4rem 0 0 0;
+  margin: 0 .5rem 0 0;
+  font-size: 120px;
+  float: left;
+}
+
+@layer components {
+  .content {
+    @apply flex mx-auto;
+  }
+  section {
+    @apply mb-24 px-8;
+  }
+
+  p {
+    @apply font-light pt-6;
+  }
+
+  h2 {
+    @apply text-3xl font-bold;
+  }
+}
+
+#hero .content .bg-left {
+  background: url("../img/detail-house.svg") no-repeat 100px 50px;
+  background-size: auto 70%;
+}
+
+#hero .content .bg-right {
+  padding-bottom: 100px;
+  background: url("../img/detail-clover-pattern.svg") no-repeat center bottom;
+  background-size: cover;
+}
+
+@media (max-width: 640px) {
+  .content {
+    flex-direction: column;
+  }
+}
