@@ -10,31 +10,31 @@ export const IndexPageTemplate = ({
 
   return (
     <>
-      <section id="hero" class="px-0">
-        <div class="content w-full max-w-none flex flex-column sm:flex-row">
-          <div class="bg-left w-full sm:w-1/2 flex items-center justify-end pr-12">
+      <section id="hero" className="px-0">
+        <div className="content w-full max-w-none flex flex-column sm:flex-row">
+          <div className="bg-left w-full sm:w-1/2 flex items-center justify-end pr-12">
             <img
-              class="w-80"
+              className="w-80"
               src="img/text-logo.png"
               alt="Randolph Lucas Jones text logo"
             />
           </div>
-          <div class="bg-right w-full sm:w-1/2">
+          <div className="bg-right w-full sm:w-1/2">
             <img src="img/hero.jpg" alt="house entry way" />
           </div>
         </div>
       </section>
 
       <section id="about">
-        <div class="bg-left"></div>
-        <div class="bg-right"></div>
-        <div class="content max-w-3xl flex-col text-lg">
+        <div className="bg-left"></div>
+        <div className="bg-right"></div>
+        <div className="content max-w-3xl flex-col text-lg">
           <img
             src="img/house_exterior_fall.jpg"
             alt="exterior of Randolph Lucas Jones House"
-            class="pb-6"
+            className="pb-6"
           />
-          <p class="subhead text-2xl">
+          <p className="subhead text-2xl">
             The Randolph-Lucas Jones House is a Georgian Revival-style mansion
             built in 1924 for Hollins Randolph, the great-great-grandson of Thomas
             Jefferson. It was later owned by Margaret Lucas until 1988 when it was
@@ -53,19 +53,19 @@ export const IndexPageTemplate = ({
       </section>
 
       <section id="history">
-        <div class="bg-left"></div>
-        <div class="bg-right"></div>
-        <div class="content flex-col-reverse sm:flex-row max-w-5xl">
-          <img src="img/about-1.jpg" class="w-100 sm:w-1/3 sm:-mt-12 sm:pb-12 sm:pr-8" />
-          <img src="img/about-2.jpg" class="w-100 pb-8 sm:w-1/3 sm:pr-8" />
-          <div class="w-100 sm:w-1/3 pb-8">
-            <h2 class="text-center">History</h2>
-            <p class="text-base">
+        <div className="bg-left"></div>
+        <div className="bg-right"></div>
+        <div className="content flex-col-reverse sm:flex-row max-w-5xl">
+          <img src="img/about-1.jpg" className="w-100 sm:w-1/3 sm:-mt-12 sm:pb-12 sm:pr-8" />
+          <img src="img/about-2.jpg" className="w-100 pb-8 sm:w-1/3 sm:pr-8" />
+          <div className="w-100 sm:w-1/3 pb-8">
+            <h2 className="text-center">History</h2>
+            <p className="text-base">
               The house was built in 1924 for Hollins Nicholas Randolph, a great,
               great grandson of Thomas Jefferson and a prominent Atlanta attorney
               in the early 20th century.
             </p>
-            <p class="text-base">
+            <p className="text-base">
               P. Thornton Marye, a respected Atlanta architect in the early
               twentieth century, designed the house based on Randolph’s ancestral
               home “Dunlora” in Albemarle County, Virginia, where Randolph was
@@ -76,11 +76,11 @@ export const IndexPageTemplate = ({
       </section>
 
       <section id="move">
-        <div class="bg-left"></div>
-        <div class="bg-right"></div>
-        <div class="content flex-col max-w-3xl">
-          <h2 class="text-center pb-6">The Move</h2>
-          <img src="img/move.jpg" class="pb-6" alt="the move" />
+        <div className="bg-left"></div>
+        <div className="bg-right"></div>
+        <div className="content flex-col max-w-3xl">
+          <h2 className="text-center pb-6">The Move</h2>
+          <img src="img/move.jpg" className="pb-6" alt="the move" />
           <p>
             In 2013, the Randolph-Lucas House was slated to be razed after falling
             into disrepair, but was saved by Roger Smith and Christopher Jones,
@@ -98,22 +98,22 @@ export const IndexPageTemplate = ({
       </section>
 
       <section id="today">
-        <div class="bg-left"></div>
-        <div class="bg-right"></div>
-        <div class="content max-w-5xl flex flex-col-reverse sm:flex-row ">
+        <div className="bg-left"></div>
+        <div className="bg-right"></div>
+        <div className="content max-w-5xl flex flex-col-reverse sm:flex-row ">
           <img
             src="img/today.jpg"
             alt="exterior of Randolph Lucas Jones House"
-            class="w-100 sm:w-2/3 pr-8"
+            className="w-100 sm:w-2/3 pr-8"
           />
-          <div class="w-100 sm:w-1/3">
-            <h2 class="text-center">Today</h2>
+          <div className="w-100 sm:w-1/3">
+            <h2 className="text-center">Today</h2>
             <p>
               The house was built in 1924 for Hollins Nicholas Randolph, a great,
               great grandson of Thomas Jefferson and a prominent Atlanta attorney
               in the early 20th century.
             </p>
-            <p class="pb-8">
+            <p className="pb-8">
               P. Thornton Marye, a respected Atlanta architect in the early
               twentieth century, designed the house based on Randolph’s ancestral
               home “Dunlora” in Albemarle County, Virginia, where Randolph was

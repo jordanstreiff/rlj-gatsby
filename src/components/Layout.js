@@ -15,7 +15,7 @@ const TemplateWrapper = ({ children }) => {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          
+
           href={`${withPrefix("/")}img/apple-touch-icon.png`}
         />
         <link
@@ -35,6 +35,16 @@ const TemplateWrapper = ({ children }) => {
           rel="mask-icon"
           href={`${withPrefix("/")}img/safari-pinned-tab.svg`}
           color="#ff4400"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+        <link rel="stylesheet" href="https://use.typekit.net/rsx8hvn.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+          rel="stylesheet"
         />
         <meta name="theme-color" content="#fff" />
 

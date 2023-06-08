@@ -16,6 +16,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-copy-files`,
+      options: {
+        source: `${__dirname}/src/img`,
+        destination: '/img',
+      },
+    },
+    {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: "gatsby-source-filesystem",
       options: {
@@ -75,6 +82,7 @@ module.exports = {
         develop: true, // Activates purging in npm run develop
         // purgeOnly: ['/bulma-style.sass'], // applies purging only on the bulma css file
         printRejected: true,
+        ignore: ['src/style/global.css']
       },
     }, // must be after other CSS plugins
     "gatsby-plugin-netlify", // make sure to keep it last in the array
