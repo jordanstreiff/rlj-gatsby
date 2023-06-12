@@ -2,6 +2,11 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+
+section {
+  @apply overflow-x-hidden;
+  @appply relative;
+}
 img {
   max-width: 100%;
 }
@@ -12,6 +17,7 @@ p {
 
 h2, h3 {
   font-family: 'Cormorant';
+  font-weight: 500;
 }
 
 .subhead::first-letter {
@@ -19,6 +25,33 @@ h2, h3 {
   margin: 0 .5rem 0 0;
   font-size: 120px;
   float: left;
+}
+
+.detail-floral {
+  height: 450px;
+  width: 450px;
+}
+
+#about_pic_1 {
+  box-shadow: 0 -16px #D8ECDB;
+}
+
+#move .content .bg-right {
+  background: url("../img/detail-floral.svg") no-repeat 100px 50px;
+  background-size: auto 70%;
+}
+
+#move_pic {
+  box-shadow: 0 16px #D8ECDB;
+}
+
+#today_pic {
+  box-shadow: 16px 0 #D8ECDB;
+}
+
+.detail-vertical {
+  width: auto;
+  height: 80%;
 }
 
 @layer components {
@@ -47,6 +80,7 @@ h2, h3 {
   padding-bottom: 100px;
   background: url("../img/detail-clover-pattern.svg") no-repeat center bottom;
   background-size: cover;
+  @apply bg-mint;
 }
 
 @media (max-width: 640px) {

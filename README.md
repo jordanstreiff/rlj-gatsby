@@ -43,10 +43,10 @@ After clicking that button, you’ll authenticate with GitHub and choose a repos
 Pulldown a local copy of the Github repository Netlify created for you, with the name you specified in the previous step
 
 ```
-$ git clone https://github.com/[GITHUB_USERNAME]/[REPO_NAME].git
-$ cd [REPO_NAME]
-$ yarn
-$ netlify dev # or ntl dev
+git clone https://github.com/[GITHUB_USERNAME]/[REPO_NAME].git
+cd [REPO_NAME]
+yarn
+netlify dev # or ntl dev
 ```
 
 This uses [Netlify Dev](https://www.netlify.com/products/dev/?utm_source=blog&utm_medium=netlifycms&utm_campaign=devex) CLI feature to serve any functions you have in the `netlify/functions` folder.
@@ -54,8 +54,8 @@ This uses [Netlify Dev](https://www.netlify.com/products/dev/?utm_source=blog&ut
 To test the CMS locally, you'll need to run a production build of the site:
 
 ```
-$ npm run build
-$ netlify dev # or ntl dev
+npm run build
+netlify dev # or ntl dev
 ```
 
 ### Media Libraries (installed, but optional)
@@ -91,10 +91,10 @@ yarn remove netlify-cms-media-library-cloudinary
 ## Getting Started (Without Netlify)
 
 ```
-$ gatsby new [SITE_DIRECTORY_NAME] https://github.com/decaporg/gatsby-starter-decap-cms/
-$ cd [SITE_DIRECTORY_NAME]
-$ npm run build
-$ npm run start
+gatsby new [SITE_DIRECTORY_NAME] https://github.com/decaporg/gatsby-starter-decap-cms/
+cd [SITE_DIRECTORY_NAME]
+npm run build
+npm run start
 ```
 
 ### Setting up the CMS
@@ -110,7 +110,7 @@ in as a user on [http:localhost:3000/admin](http:localhost:3000/admin).
 Windows users, who aren't using [WSL](https://docs.microsoft.com/en-us/windows/wsl/about), might encounter `node-gyp` errors when trying to npm install.
 To resolve, make sure that you have both Python 2.7 and the Visual C++ build environment installed.
 
-```
+```bash
 npm config set python python2.7
 npm install --global --production windows-build-tools
 ```

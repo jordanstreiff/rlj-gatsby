@@ -15,7 +15,6 @@ const TemplateWrapper = ({ children }) => {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-
           href={`${withPrefix("/")}img/apple-touch-icon.png`}
         />
         <link
@@ -38,7 +37,7 @@ const TemplateWrapper = ({ children }) => {
         />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
 
-        <link rel="stylesheet" href="https://use.typekit.net/rsx8hvn.css" />
+        <link rel="stylesheet" href="https://use.typekit.net/rsx8hvn.css" onLoad="try{Typekit.load({ async: true });}catch(e){}" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -62,3 +61,4 @@ const TemplateWrapper = ({ children }) => {
 };
 
 export default TemplateWrapper;
+

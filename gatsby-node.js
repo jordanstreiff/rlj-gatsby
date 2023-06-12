@@ -57,3 +57,13 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
+
+exports.onCreateWebpackConfig = ({ stage, actions }) => {
+  if (stage === 'develop') {
+    actions.setWebpackConfig({
+      devServer: {
+        hot: true,
+      },
+    });
+  }
+};
