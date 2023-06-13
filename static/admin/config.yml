@@ -23,7 +23,6 @@ collections:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Heading", name: "heading", widget: "string" }
-          - { label: "Subheading", name: "subheading", widget: "string" }
           - { label: "About Paragraph", name: "aboutParagraph", widget: "text" }
           - { label: "History Paragraph 1", name: "historyParagraph1", widget: "text" }
           - { label: "History Paragraph 2", name: "historyParagraph2", widget: "text" }

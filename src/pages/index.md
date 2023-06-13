@@ -2,7 +2,6 @@
 templateKey: index-page
 title: Randolph Lucas Jones House
 heading: Randolph Lucas Jones House
-subheading: Support sustainable farming while enjoying a cup
 aboutParagraph: >
   The Randolph-Lucas Jones Houses is a Georgian Revival-style mansion built in
   1924 for Hollins Randolph, the great-great-grandson of Thomas Jefferson. It
