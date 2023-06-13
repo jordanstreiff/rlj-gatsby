@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { graphql } from "gatsby";
+import { StaticQuery, graphql } from "gatsby";
 import Layout from "../components/Layout";
 
 // eslint-disable-next-line
@@ -120,22 +120,41 @@ IndexPageTemplate.propTypes = {
   todayParagraph2: PropTypes.string,
 };
 
-const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark;
-
-  return (
-    <IndexPageTemplate
-      title={frontmatter.title}
-      heading={frontmatter.heading}
-      aboutParagraph={frontmatter.aboutParagraph}
-      historyParagraph1={frontmatter.historyParagraph1}
-      historyParagraph2={frontmatter.historyParagraph2}
-      moveParagraph={frontmatter.moveParagraph}
-      todayParagraph1={frontmatter.todayParagraph1}
-      todayParagraph2={frontmatter.todayParagraph2}
-    />
-  );
-};
+const IndexPage = () => (
+  <StaticQuery
+    query={graphql`
+      query IndexPageStaticQuery {
+        markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+          frontmatter {
+            title
+            heading
+            aboutParagraph
+            historyParagraph1
+            historyParagraph2
+            moveParagraph
+            todayParagraph1
+            todayParagraph2
+          }
+        }
+      }
+    `}
+    render={(data) => {
+      const { frontmatter } = data.markdownRemark;
+      return (
+        <IndexPageTemplate
+          title={frontmatter.title}
+          heading={frontmatter.heading}
+          aboutParagraph={frontmatter.aboutParagraph}
+          historyParagraph1={frontmatter.historyParagraph1}
+          historyParagraph2={frontmatter.historyParagraph2}
+          moveParagraph={frontmatter.moveParagraph}
+          todayParagraph1={frontmatter.todayParagraph1}
+          todayParagraph2={frontmatter.todayParagraph2}
+        />
+      );
+    }}
+  />
+);
 
 IndexPage.propTypes = {
   data: PropTypes.shape({
@@ -146,20 +165,4 @@ IndexPage.propTypes = {
 };
 
 export default IndexPage;
-
-export const pageQuery = graphql`
-  query IndexPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-      frontmatter {
-        title
-        aboutParagraph
-        historyParagraph1
-        historyParagraph2
-        moveParagraph
-        todayParagraph1
-        todayParagraph2
-      }
-    }
-  }
-`;
 
