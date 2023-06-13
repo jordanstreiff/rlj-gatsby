@@ -1,8 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby + Netlify CMS Starter",
-    description:
-      "This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.",
+    title: "Randolph Lucas Jones House",
+    description: "The Randolph-Lucas Jones House is a Georgian Revival-style mansion built in 1924 for Hollins Randolph, the great-great-grandson of Thomas Jefferson. It was later owned by Margaret Lucas until 1988 when it was sold to a developer and used as an event space. In 2013, it was set to be demolished, but was saved by Roger Smith and Christopher Jones, who bought and moved it to a vacant lot in Ansley Park, where it was extensively refurbished. Jones passed away in 2019, and the mansion was renamed in his honor. The house was honored with the Georgia Trust’s Excellence in Preservation Award in 2020, and previously by the Atlanta Preservation Center and the Daughters of the American Revolution’s local chapter. The effort to save the house was described as “one of the most significant preservation projects the city of Atlanta has had in years.",
   },
   plugins: [
     'gatsby-plugin-postcss',
