@@ -14,7 +14,7 @@ export const IndexPageTemplate = ({
 }) => {
   return (
     <Layout>
-      <div className="bg-offWhite">
+      <div className="bg-offWhite pt-36">
         <section id="hero" className="px-0">
           <div className="content w-full max-w-none flex flex-column sm:flex-row">
             <div className="bg-left w-full sm:w-1/2 flex items-center justify-end pr-12">
@@ -25,7 +25,7 @@ export const IndexPageTemplate = ({
               />
             </div>
             <div className="bg-right w-full sm:w-1/2">
-              <img src="img/hero.jpg" alt="House entry way at Randolph Lucas Jones House" />
+              <img src="img/house_living_room.jpg" alt="Living room at Randolph Lucas Jones House" />
             </div>
           </div>
         </section>
@@ -82,7 +82,7 @@ export const IndexPageTemplate = ({
           <img src="img/detail-floral.svg" className="detail-floral absolute top-0 -right-48 bottom-0 z-0" alt="Illustrated floral detail" />
         </section>
 
-        <section id="today" className="relative bg-beige py-24">
+        <section id="today" className="relative bg-beige py-24 mb-0">
           <img src="img/detail-vertical.svg" className="absolute top-0 bottom-0 -right-8 detail-vertical my-auto" alt="Illustrated vertical detail" />
           <img src="img/detail-vertical.svg" className="absolute top-0 bottom-0 -left-8 detail-vertical my-auto" alt="Illustrated vertical detail" />
           <div className="bg-right"></div>
