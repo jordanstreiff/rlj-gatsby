@@ -5,7 +5,6 @@ import Layout from "../components/Layout";
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
-  title,
   aboutParagraph,
   historyParagraph1,
   historyParagraph2,
@@ -26,7 +25,7 @@ export const IndexPageTemplate = ({
               />
             </div>
             <div className="bg-right w-full sm:w-1/2">
-              <img src="img/hero.jpg" alt="house entry way" />
+              <img src="img/hero.jpg" alt="House entry way at Randolph Lucas Jones House" />
             </div>
           </div>
         </section>
@@ -35,11 +34,11 @@ export const IndexPageTemplate = ({
           <div className="content max-w-3xl flex-col text-lg">
             <div className="relative">
               <div className="bg-mint absolute h-full w-full top-6 left-6" />
-              <img src="img/detail-floral.svg" className="absolute -bottom-64 -left-64 detail-floral" />
+              <img src="img/detail-floral.svg" className="absolute -bottom-64 -left-64 detail-floral" alt="Illustrated floral detail" />
               <img
                 src="img/house_exterior_fall.jpg"
                 className="relative"
-                alt="exterior of Randolph Lucas Jones House"
+                alt="Exterior of Randolph Lucas Jones House in fall"
               />
             </div>
 
@@ -55,8 +54,8 @@ export const IndexPageTemplate = ({
               <div className="absolute -left-96 right-0 top-0 bottom-0">
                 <div className="absolute -left-96 right-0 bottom-1/2 bg-mint h-40" />
               </div>
-              <img src="img/about-1.jpg" id="about_pic_1" className="w-100 sm:w-1/2 sm:-mt-12 sm:pb-12 sm:mr-8 z-10" />
-              <img src="img/about-2.jpg" className="w-100 pb-8 sm:w-1/2 sm:pr-8 z-10" />
+              <img src="img/about-1.jpg" id="about_pic_1" className="w-100 sm:w-1/2 sm:-mt-12 sm:pb-12 sm:mr-8 z-10" alt="Staircase inside Randolph Lucas Jones House" />
+              <img src="img/about-2.jpg" className="w-100 pb-8 sm:w-1/2 sm:pr-8 z-10" alt="Fireplace inside Randolph Lucas Jones House" />
             </div>
 
             <div className="w-100 sm:w-1/3 pb-8 ml-6 flex flex-col justify-center">
@@ -75,23 +74,23 @@ export const IndexPageTemplate = ({
           <div className="content flex-col max-w-3xl relative z-10">
             <div className="bg-right"></div>
             <h2 className="text-center pb-6">The Move</h2>
-            <img src="img/move.jpg" id="move_pic" className="mb-6" alt="the move" />
+            <img src="img/move.jpg" id="move_pic" className="mb-6" alt="Crane moving Randolph Lucas Jones House" />
             <p>
               {moveParagraph}
             </p>
           </div>
-          <img src="img/detail-floral.svg" className="detail-floral absolute top-0 -right-48 bottom-0 z-0" />
+          <img src="img/detail-floral.svg" className="detail-floral absolute top-0 -right-48 bottom-0 z-0" alt="Illustrated floral detail" />
         </section>
 
         <section id="today" className="relative bg-beige py-24">
-          <img src="img/detail-vertical.svg" className="absolute top-0 bottom-0 -right-8 detail-vertical my-auto" />
-          <img src="img/detail-vertical.svg" className="absolute top-0 bottom-0 -left-8 detail-vertical my-auto" />
+          <img src="img/detail-vertical.svg" className="absolute top-0 bottom-0 -right-8 detail-vertical my-auto" alt="Illustrated vertical detail" />
+          <img src="img/detail-vertical.svg" className="absolute top-0 bottom-0 -left-8 detail-vertical my-auto" alt="Illustrated vertical detail" />
           <div className="bg-right"></div>
           <div className="content max-w-5xl flex flex-col-reverse sm:flex-row items-center">
             <img
               id="today_pic"
               src="img/today.jpg"
-              alt="exterior of Randolph Lucas Jones House"
+              alt="Kitchen inside Randolph Lucas Jones House"
               className="w-100 sm:w-2/3 mr-16"
             />
             <div className="w-100 sm:w-1/3 flex flex-col justify-center">
@@ -163,3 +162,4 @@ export const pageQuery = graphql`
     }
   }
 `;
+
