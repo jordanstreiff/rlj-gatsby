@@ -4,8 +4,8 @@ title: Randolph Lucas Jones House
 heading: Randolph Lucas Jones House
 subheading: Support sustainable farming while enjoying a cup
 aboutParagraph: >
-  The Randolph-Lucas Jones Housessss is a Georgian Revival-style mansion built
-  in 1924 for Hollins Randolph, the great-great-grandson of Thomas Jefferson. It
+  The Randolph-Lucas Jones Houses is a Georgian Revival-style mansion built in
+  1924 for Hollins Randolph, the great-great-grandson of Thomas Jefferson. It
   was later owned by Margaret Lucas until 1988 when it was sold to a developer
   and used as an event space. In 2013, it was set to be demolished, but was
   saved by Roger Smith and Christopher Jones, who bought and moved it to a
