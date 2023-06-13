@@ -72,8 +72,15 @@ h2, h3 {
 }
 
 #hero .content .bg-left {
-  background: url("../img/detail-house.svg") no-repeat 100px 50px;
+  background: url("../img/detail-house.svg") no-repeat center center;
   background-size: auto 70%;
+}
+
+@media (max-width: 640px) {
+  #hero .content .bg-left {
+    background-position: center center;
+    background-size: auto 100%;
+  }
 }
 
 #hero .content .bg-right {

@@ -16,8 +16,8 @@ export const IndexPageTemplate = ({
     <Layout>
       <div className="bg-offWhite pt-36">
         <section id="hero" className="px-0">
-          <div className="content w-full max-w-none flex flex-column sm:flex-row">
-            <div className="bg-left w-full sm:w-1/2 flex items-center justify-end pr-12">
+          <div className="content w-full max-w-none flex flex-col sm:flex-row">
+            <div className="bg-left w-full sm:w-1/2 flex items-center justify-center sm:justify-end sm:pr-12 pr-0 sm:mb-0 mb-16">
               <img
                 className="w-80"
                 src="img/text-logo.png"
@@ -30,7 +30,7 @@ export const IndexPageTemplate = ({
           </div>
         </section>
 
-        <section id="about">
+        <section id="about" className="mb-12 sm:mb-24">
           <div className="content max-w-3xl flex-col text-lg">
             <div className="relative">
               <div className="bg-mint absolute h-full w-full top-6 left-6" />
@@ -48,13 +48,13 @@ export const IndexPageTemplate = ({
           </div>
         </section>
 
-        <section id="history" className="bg-beige pt-36 pb-16 relative">
-          <div className="content flex-col-reverse sm:flex-row max-w-5xl">
-            <div className="sm:w-2/3 flex flex-row relative">
+        <section id="history" className="bg-beige pt-36 pb-16 relative mb-12 sm:mb-24">
+          <div className="content flex-col sm:flex-row max-w-5xl">
+            <div className="sm:w-2/3 flex flex-col sm:flex-row relative">
               <div className="absolute -left-96 right-0 top-0 bottom-0">
                 <div className="absolute -left-96 right-0 bottom-1/2 bg-mint h-40" />
               </div>
-              <img src="img/about-1.jpg" id="about_pic_1" className="w-100 sm:w-1/2 sm:-mt-12 sm:pb-12 sm:mr-8 z-10" alt="Staircase inside Randolph Lucas Jones House" />
+              <img src="img/about-1.jpg" id="about_pic_1" className="w-100 sm:w-1/2 sm:-mt-12 sm:pb-12 sm:mr-8 z-10 mb-8 sm:mb-0" alt="Staircase inside Randolph Lucas Jones House" />
               <img src="img/about-2.jpg" className="w-100 pb-8 sm:w-1/2 sm:pr-8 z-10" alt="Fireplace inside Randolph Lucas Jones House" />
             </div>
 
@@ -70,7 +70,7 @@ export const IndexPageTemplate = ({
           </div>
         </section>
 
-        <section id="move" className="relative">
+        <section id="move" className="relative mb-12 sm:mb-24">
           <div className="content flex-col max-w-3xl relative z-10">
             <div className="bg-right"></div>
             <h2 className="text-center pb-6">The Move</h2>
@@ -83,17 +83,17 @@ export const IndexPageTemplate = ({
         </section>
 
         <section id="today" className="relative bg-beige py-24 mb-0">
-          <img src="img/detail-vertical.svg" className="absolute top-0 bottom-0 -right-8 detail-vertical my-auto" alt="Illustrated vertical detail" />
-          <img src="img/detail-vertical.svg" className="absolute top-0 bottom-0 -left-8 detail-vertical my-auto" alt="Illustrated vertical detail" />
+          <img src="img/detail-vertical.svg" className="absolute top-0 bottom-0 -right-8 detail-vertical my-auto opacity-30 lg:opacity-100" alt="Illustrated vertical detail" />
+          <img src="img/detail-vertical.svg" className="absolute top-0 bottom-0 -left-8 detail-vertical my-auto opacity-30 lg:opacity-100" alt="Illustrated vertical detail" />
           <div className="bg-right"></div>
-          <div className="content max-w-5xl flex flex-col-reverse sm:flex-row items-center">
+          <div className="content max-w-5xl flex flex-col sm:flex-row items-center">
             <img
               id="today_pic"
               src="img/today.jpg"
               alt="Kitchen inside Randolph Lucas Jones House"
-              className="w-100 sm:w-2/3 mr-16"
+              className="w-100 sm:w-2/3 sm:mr-16 mr-0 mb-8 sm:mb-0 z-10"
             />
-            <div className="w-100 sm:w-1/3 flex flex-col justify-center">
+            <div className="w-100 sm:w-1/3 flex flex-col justify-center z-10">
               <h2 className="text-center">Today</h2>
               <p>
                 {todayParagraph1}
