@@ -33,7 +33,7 @@ moveParagraph: >
   Randolph Lucas Jones House in honor of Jones after his death in 2019. The move
   and restoration were significant preservation projects in the city of Atlanta,
   and the house has received several awards and recognition for its historical
-  and architectural significancessss.
+  and architectural significances.
 todayParagraph1: >
   The house was built in 1924 for Hollins Nicholas Randolph, a great, great
   grandson of Thomas Jefferson and a prominent Atlanta attorney in the early
